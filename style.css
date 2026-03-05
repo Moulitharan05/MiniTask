@@ -1,0 +1,13 @@
+a{
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    width: 250px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    display:flex;
+    color: rgb(12, 20, 1);
+    background-color: rgb(232, 187, 187);
+    text-align: justify;
+
+}
