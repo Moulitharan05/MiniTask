@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+    <link rel="stylesheet" href="../JsDomMicroTask/Q3.css">
+</head>
+<body>
+
+    <h1 id="heading">
+        Click Me
+        <p>This is a paragraph inside H1</p>
+    </h1>
+
+    <p>
+        Mouse Coordinates: 
+        X = <span id="xValue">0</span> , 
+        Y = <span id="yValue">0</span>
+    </p>
+
+    <script>
+        const heading = document.getElementById("heading");
+
+        heading.addEventListener("click", function(event) {
+            document.getElementById("xValue").textContent = event.clientX;
+            document.getElementById("yValue").textContent = event.clientY;
+        });
+    </script>
+
+</body>
+</html>

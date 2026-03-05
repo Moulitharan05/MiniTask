@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editable Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="editable">
+    Move cursor here to edit this content
+</div>
+
+<script>
+const div = document.getElementById("editable");
+
+div.addEventListener("mouseover", function() {
+    div.contentEditable = "true";
+});
+
+div.addEventListener("mouseout", function() {
+    div.contentEditable = "false";
+});
+</script>
+
+</body>
+</html>

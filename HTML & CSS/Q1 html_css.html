@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wave Equation</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .fraction {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .fraction .top {
+      border-bottom: 1px solid black;
+      display: block;
+    }
+
+    .fraction .bottom {
+      display: block;
+    }
+
+    .sup {
+      vertical-align: super;
+      font-size: 0.7em;
+    }
+
+    .equation {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .term {
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="equation">
+    <div class="fraction term">
+      <span class="top">∂<sup>2</sup>u</span>
+      <span class="bottom">∂t<sup>2</sup></span>
+    </div>
+
+    <span>=</span>
+
+    <div class="term">
+      c<sup>2</sup>
+    </div>
+
+    <div class="fraction term">
+      <span class="top">∂<sup>2</sup>u</span>
+      <span class="bottom">∂x<sup>2</sup></span>
+    </div>
+  </div>
+</body>
+</html>

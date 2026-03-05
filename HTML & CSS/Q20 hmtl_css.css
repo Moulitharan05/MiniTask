@@ -1,0 +1,8 @@
+.rotate-box {
+  width: 150px;
+  height: 150px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 150px;
+  transform: rotate(45deg); /* Rotate 45 degrees */
+}

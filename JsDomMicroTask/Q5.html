@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="../JsDomMicroTask/Q5.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Decimal Converter</h2>
+
+    <input type="number" id="decimal" placeholder="Enter decimal number">
+    <button onclick="convert()">Convert</button>
+
+    <p>Binary: <span id="binary"></span></p>
+    <p>Hexadecimal: <span id="hex"></span></p>
+</div>
+
+<script>
+function convert() {
+    let num = parseInt(document.getElementById("decimal").value);
+    document.getElementById("binary").textContent = num.toString(2);
+    document.getElementById("hex").textContent = num.toString(16).toUpperCase();
+}
+</script>
+
+</body>
+</html>

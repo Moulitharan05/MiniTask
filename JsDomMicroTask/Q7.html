@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fullscreen</title>
+    <link rel="stylesheet" href="../JsDomMicroTask/Q7.css">
+</head>
+<body>
+
+<div class="box">
+    <button onclick="openFullscreen()">Full Screen</button>
+    <button onclick="closeFullscreen()">Exit Full Screen</button>
+</div>
+
+<script>
+function openFullscreen() {
+    document.documentElement.requestFullscreen();
+}
+
+function closeFullscreen() {
+    document.exitFullscreen();
+}
+</script>
+
+</body>
+</html>

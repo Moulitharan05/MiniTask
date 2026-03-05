@@ -1,0 +1,8 @@
+body {
+  background-image: url("../your-images.jpg/download.jpeg"); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Optional: makes image cover full screen */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}

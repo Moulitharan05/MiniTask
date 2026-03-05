@@ -1,0 +1,25 @@
+/* Default font size */
+body {
+  font-size: 16px;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}

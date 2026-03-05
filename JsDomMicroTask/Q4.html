@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="../JsDomMicroTask/Q4.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Twitter Inspired Character Counter</h2>
+
+        <textarea id="textInput" maxlength="200" placeholder="Type something..."></textarea>
+
+        <p>
+            Characters: <span id="charCount">0</span> / 300
+        </p>
+    </div>
+
+    <script>
+        const textarea = document.getElementById("textInput");
+        const counter = document.getElementById("charCount");
+
+        textarea.addEventListener("input", function() {
+            let length = textarea.value.length;
+            counter.textContent = length;
+
+            // Optional: Change color when limit near
+            if (length > 180) {
+                counter.style.color = "red";
+            } else {
+                counter.style.color = "black";
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1</title>
+    <style>
+        #box {
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">Move mouse over me</div>
+
+    <script>
+        const box = document.getElementById("box");
+
+        box.addEventListener("mouseover", function () {
+            box.style.color = "white";
+            box.style.backgroundColor = "green";
+        });
+
+        box.addEventListener("mouseout", function () {
+            box.style.color = "black";
+            box.style.backgroundColor = "white";
+        });
+    </script>
+
+</body>
+</html>

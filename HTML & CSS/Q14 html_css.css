@@ -1,0 +1,9 @@
+.image-border {
+  width: 300px;
+  padding: 20px;
+  border-width: 30px;
+  border-style: solid;
+  border-image-source: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3jOMtRCQ93aAIMPRj1K61XfueyeBakmlHjMAfW0y0T1L0QTsN4ErGec8&s'); /* Replace with your border image URL */
+  border-image-slice: 30;
+  border-image-repeat: stretch;  /* stretch the border image */
+}

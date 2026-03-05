@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Register</h2>
+
+    <form onsubmit="return validate()">
+        <input type="text" id="name" placeholder="Enter Name"><br>
+        <input type="text" id="email" placeholder="Enter Email"><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+function validate() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+        alert("All fields required!");
+        return false;
+    }
+
+    if (!email.includes("@")) {
+        alert("Invalid Email!");
+        return false;
+    }
+
+    alert("Success!");
+    return true;
+}
+</script>
+
+</body>
+</html>

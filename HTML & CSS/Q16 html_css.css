@@ -1,0 +1,8 @@
+.hover-image {
+  opacity: 0.5; /* Transparent initially */
+  transition: opacity 0.3s ease; /* Smooth fade effect */
+}
+
+.hover-image:hover {
+  opacity: 1; /* Fully visible on hover */
+}

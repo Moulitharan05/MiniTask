@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#editable {
+    border: 2px solid black;
+    padding: 15px;
+    width: 300px;
+}
